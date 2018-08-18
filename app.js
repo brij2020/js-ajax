@@ -28,9 +28,21 @@ $(
             }
         ).done(
             (res)=>{
+                i = 0 
                 console.log(res);
+                res.items.forEach(e => {
+                    
+                    console.log( e.media.m);
+                    li = document.createElement('li');
+                    img = document.createElement('img');
+                    li.appendChild(img);
+                    document.querySelector('.img').appendChild(li);
+                    $('img')[i].src = e.media.m;
+                    i++;
+                });
                 // here success code
             }
+
         ).fail(
             (failres)=>{
                 console.log(failres);
