@@ -6,25 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JavaScript</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+    </script>
+    
 </head>
-<body>
-  
-<div class="btn">
+<body class="container">
 
-    <button class="btn" >Click</button>
-</div>
+    <div class="row">
 
 
-<div class="test">
-    <ul class="img">
+        <div class="card">
+            <div class="card-title"><strong style="text-align:center">Enter Zip Code</strong> 
+                <div class="card-content">
+                    <div class="row">
+                        <form action="" class="col s12">
+                            <span class="red " style="display: none;">use valid zip code </span>
+                            <div class="row">  
+                                <label for="zip">Zip Code</label>
+                                <input type="text" value="" id="zip" autocomplete='Zip-code'>
+                            </div>
+                            <div class="row">
+                                <label for="ct">City</label>
+                                <input type="text" value="" id="ct" autocomplete='city'>
+                            </div>
+                             <div class="row">
+                                <label for="st">State</label>
+                                <input type="text" value="" id="st" autocomplete='state'>
+                            </div>
+                            <div class="row">
+                                <label for="con">Country</label>
+                                <input type="text" value="" id="con" autocomplete='country'>
+                            </div>
+                           
+                        </form>
 
-        
-    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+    </div>
 
-</div>
-   
+
+
+
+
+
+
+
+
 
 <script src="app.js"></script>
-
 </body>
 </html>
